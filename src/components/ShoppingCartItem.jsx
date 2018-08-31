@@ -9,7 +9,7 @@ class ShoppingCartItem extends Component {
     const { product } = this.props;
 
     return (
-      <div className="border border-dark rounded container m-auto">
+      <div className="cart border border-dark rounded container m-auto">
         {items.map(product => (
           <li key={product.id}>
             <p>
@@ -61,6 +61,6 @@ const mapActionsToProps = {
 };
 
 export default connect(
-  mapSoreToProps,
+  mapStoreToProps,
   mapActionsToProps
 )(ShoppingCartItem);
